@@ -4,6 +4,14 @@
   overflow: hidden;
   max-width: 530px;
   margin: auto auto 1rem;
+
+  img {
+    height: 26rem;
+      transform: translateX(-50%);
+      left: 50%;
+      position: relative;
+  }
+
   .caption {
     display: flex;
     height: 100%;
@@ -35,15 +43,19 @@
       clip-path: inset(0px);
       .caption-content {
         transition: opacity 0.25s;
-        margin-left: 5rem;
-        margin-right: 5rem;
-        margin-bottom: 5rem;
+        //margin-left: 5rem;
+        //margin-right: 5rem;
+        //margin-bottom: 5rem;
+        background-color: #fff;
+        color: #333;
+        padding: 16px;
       }
     }
     img {
       -webkit-transition: -webkit-clip-path 0.25s ease-out;
       -webkit-clip-path: inset(-1px);
       clip-path: inset(-1px);
+  }
     }
     &:hover {
       img {
@@ -57,4 +69,3 @@
       }
     }
   }
-}
